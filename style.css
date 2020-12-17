@@ -1,0 +1,20 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ireservia {
+  width: 100px;
+  height: 40px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin-top: 34px;
+}
+li {
+  margin-right: 50px;
+}
