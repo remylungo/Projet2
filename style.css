@@ -9,12 +9,25 @@
   margin-left: 20px;
   margin-top: 20px;
 }
-ul {
+.listes1 {
   display: flex;
   flex-direction: row;
   list-style-type: none;
   margin-top: 34px;
+  color: #0065fc;
 }
 li {
   margin-right: 50px;
+}
+.activité {
+  color: black;
+}
+
+@font-face {
+  font-family: raleway bold;
+  src: url(font/static/Raleway-Bold.ttf);
+}
+.findholiday {
+  font-family: raleway bold;
+  margin-left: 20px;
 }
