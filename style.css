@@ -1,3 +1,12 @@
+@font-face {
+  font-family: raleway bold;
+  src: url(font/static/Raleway-Bold.ttf);
+}
+@font-face {
+  font-family: raleway regular;
+  src: url(font/static/Raleway-Regular.ttf);
+}
+
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -15,6 +24,7 @@
   list-style-type: none;
   margin-top: 34px;
   color: #0065fc;
+  font-family: raleway regular;
 }
 li {
   margin-right: 50px;
@@ -23,11 +33,16 @@ li {
   color: black;
 }
 
-@font-face {
-  font-family: raleway bold;
-  src: url(font/static/Raleway-Bold.ttf);
+.sect1 {
+  margin-left: 20px;
 }
 .findholiday {
   font-family: raleway bold;
-  margin-left: 20px;
+}
+.pnature {
+  font-family: raleway regular;
+}
+.barsearch {
+  display: flex;
+  flex-direction: row;
 }
