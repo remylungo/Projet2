@@ -87,8 +87,8 @@ li {
   border: none;
   background-color: #deebff;
   border-radius: 70px;
-  width: 30px;
-  height: 30px;
+  width: 36px;
+  height: 36px;
   position: absolute;
   left: 111px;
   top: 230px;
@@ -96,15 +96,15 @@ li {
 }
 
 .Eco {
-  height: 24px;
+  height: 30px;
   width: 135px;
   padding-left: 15px;
   border-style: solid;
   border-left: none;
   border-width: 2px;
   border-color: lightgrey;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
   background-color: white;
   text-align: center;
   font-family: Raleway bold;
