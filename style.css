@@ -74,28 +74,38 @@ li {
   display: flex;
   flex-direction: row;
 }
-.filter {
-  font-family: Raleway bold;
-}
+
 .filter1 {
   margin-top: 20px;
   margin-left: 55px;
 }
+.filter {
+  font-family: Raleway bold;
+  margin-top: 25px;
+}
 .logo1 {
   border: none;
-  background-color: lightgrey;
+  background-color: #deebff;
   border-radius: 70px;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   position: absolute;
+  left: 111px;
+  top: 230px;
   z-index: 1;
 }
 
 .Eco {
+  height: 24px;
+  width: 135px;
+  padding-left: 15px;
   border-style: solid;
   border-left: none;
-  border-width: 3px;
-  border-color: grey;
-  margin-left: 15px;
-  z-index: 2;
+  border-width: 2px;
+  border-color: lightgrey;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: white;
+  text-align: center;
+  font-family: Raleway bold;
 }
