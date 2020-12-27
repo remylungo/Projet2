@@ -70,3 +70,32 @@ li {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+.raccourci {
+  display: flex;
+  flex-direction: row;
+}
+.filter {
+  font-family: Raleway bold;
+}
+.filter1 {
+  margin-top: 20px;
+  margin-left: 55px;
+}
+.logo1 {
+  border: none;
+  background-color: lightgrey;
+  border-radius: 70px;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  z-index: 1;
+}
+
+.Eco {
+  border-style: solid;
+  border-left: none;
+  border-width: 3px;
+  border-color: grey;
+  margin-left: 15px;
+  z-index: 2;
+}
