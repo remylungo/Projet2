@@ -46,3 +46,27 @@ li {
   display: flex;
   flex-direction: row;
 }
+.maps {
+  border-style: ridge;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: lightgrey;
+  border-width: 1px;
+  border-color: lightgrey;
+  height: 40px;
+}
+.search {
+  font-family: Raleway bold;
+  border-right: none;
+  border-left: none;
+  border-style: ridge;
+  border-width: 1px;
+}
+.validate {
+  background-color: #0065fc;
+  border: none;
+  color: white;
+  font-family: Raleway bold;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
