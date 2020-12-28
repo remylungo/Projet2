@@ -75,8 +75,7 @@ li {
   flex-direction: row;
 }
 
-.filter1,
-.filter2 {
+.filter {
   margin-top: 20px;
   margin-left: 55px;
 }
@@ -84,19 +83,39 @@ li {
   font-family: Raleway bold;
   margin-top: 25px;
 }
-.logo1 {
+.logo {
   border: none;
   background-color: #deebff;
   border-radius: 70px;
   width: 36px;
   height: 36px;
+}
+
+#logo1 {
   position: absolute;
   left: 111px;
   top: 230px;
   z-index: 1;
 }
 
-.Eco {
+#logo2 {
+  position: absolute;
+  left: 320px;
+  top: 230px;
+}
+
+#logo3 {
+  position: absolute;
+  left: 525px;
+  top: 230px;
+}
+#logo4 {
+  position: absolute;
+  left: 725px;
+  top: 230px;
+}
+
+.containerfilt {
   height: 30px;
   width: 135px;
   padding-left: 15px;
