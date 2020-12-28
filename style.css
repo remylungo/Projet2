@@ -75,11 +75,12 @@ li {
   flex-direction: row;
 }
 
-.filter1 {
+.filter1,
+.filter2 {
   margin-top: 20px;
   margin-left: 55px;
 }
-.filter {
+.titlefilter {
   font-family: Raleway bold;
   margin-top: 25px;
 }
