@@ -32,7 +32,9 @@ li {
 .activité {
   color: black;
 }
-
+.signup {
+  font-family: Raleway bold;
+}
 .sect1 {
   margin-left: 20px;
 }
@@ -93,9 +95,8 @@ li {
 
 #logo1 {
   position: absolute;
-  left: 111px;
+  left: 110px;
   top: 230px;
-  z-index: 1;
 }
 
 #logo2 {
@@ -106,13 +107,39 @@ li {
 
 #logo3 {
   position: absolute;
-  left: 525px;
+  left: 540px;
   top: 230px;
 }
 #logo4 {
   position: absolute;
-  left: 725px;
+  right: 750px;
   top: 230px;
+}
+
+i {
+  color: #0065fc;
+}
+
+.fa-dog:before {
+  position: absolute;
+  right: 761px;
+  top: 240px;
+}
+
+.fa-child:before {
+  position: absolute;
+  left: 333px;
+  top: 241px;
+}
+.fa-heart:before {
+  position: absolute;
+  right: 968px;
+  top: 242px;
+}
+.fa-money-bill-wave-alt:before {
+  position: absolute;
+  left: 120px;
+  top: 241px;
 }
 
 .containerfilt {
@@ -128,4 +155,28 @@ li {
   background-color: white;
   text-align: center;
   font-family: Raleway bold;
+}
+
+.Warning {
+  display: flex;
+  flex-direction: row;
+  margin-top: 60px;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: #deebff;
+  margin-top: 10px;
+}
+.fa-info::before {
+  position: absolute;
+  left: 40px;
+  margin-top: 16px;
+}
+
+.notif500 {
+  margin-left: 20px;
+  font-family: raleway regular;
 }
