@@ -239,6 +239,7 @@ i {
 .container {
   width: 270px;
   height: 210px;
+  margin: auto;
 }
 
 .chamberimage {
@@ -270,12 +271,54 @@ i {
   border-top-left-radius: 20px;
   margin: 5px 0px 5px 5px;
 }
-.righttitle {
+
+#leftimage2 {
+  background-image: url(/projet2/images/hebergements/4_small/chamber22.jpg);
+}
+#leftimage3 {
+  background-image: url(/projet2/images/hebergements/4_small/chamber23.jpg);
+}
+
+.righttitle,
+.righttitle2,
+.righttitle3 {
   position: absolute;
-  right: 110px;
+  right: 145px;
+}
+
+h4,
+h5 {
+  font-family: raleway bold;
 }
 
 h5 {
-  font-family: raleway bold;
-  margin-left: 15px;
+  margin: 5px 0 0 20px;
+}
+
+.nightprice {
+  margin-left: 20px;
+  font-family: Raleway regular;
+}
+
+#nightprice2,
+#nightprice3,
+#nightprice4 {
+  position: absolute;
+  top: 630px;
+  right: 135px;
+}
+
+#nightprice3 {
+  top: 830px;
+}
+
+#nightprice2 {
+  top: 1030px;
+}
+
+.moreinfo {
+  font-family: Raleway bold;
+  position: absolute;
+  left: 75px;
+  top: 1060px;
 }
