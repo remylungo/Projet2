@@ -224,32 +224,55 @@ i {
   flex-flow: row wrap;
 }
 
-.wcontent2 {
-  flex-flow: column wrap;
-}
-
 .container,
 .container2 {
   background-color: white;
   border-radius: 20px;
-  margin: 10px 0 0 0;
+  margin: 15px 0 0 0;
+}
+#container4,
+#container5,
+#container6 {
+  margin-top: 50px;
 }
 
 .container {
   width: 270px;
-  height: 200px;
+  height: 210px;
+}
+
+.chamberimage {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin: 3px 0 0 03px;
+  width: 263px;
+  height: 110px;
 }
 
 .container2 {
+  display: flex;
+  flex-direction: column;
   height: 180px;
   width: 400px;
   margin-left: 20px;
 }
 
-#container4,
-#container5,
-#container6 {
-  margin-top: 50px;
+.wcontent2 {
+  flex-flow: column wrap;
+}
+
+.leftimage {
+  height: 100%;
+  background-image: url(/projet2/images/hebergements/4_small/chamber21.jpg);
+  background-repeat: no-repeat;
+  background-size: 170px 100%;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  margin: 5px 0px 5px 5px;
+}
+.righttitle {
+  position: absolute;
+  right: 110px;
 }
 
 h5 {
