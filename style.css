@@ -78,12 +78,12 @@ h3 {
 }
 
 .filter {
-  margin-top: 20px;
+  margin-top: 70px;
   margin-left: 55px;
 }
 .titlefilter {
   font-family: Raleway bold;
-  margin-top: 25px;
+  margin-top: 80px;
 }
 .logo {
   border: none;
@@ -96,24 +96,24 @@ h3 {
 #logo1 {
   position: absolute;
   left: 110px;
-  top: 230px;
+  top: 280px;
 }
 
 #logo2 {
   position: absolute;
   left: 320px;
-  top: 230px;
+  top: 280px;
 }
 
 #logo3 {
   position: absolute;
   left: 540px;
-  top: 230px;
+  top: 280px;
 }
 #logo4 {
   position: absolute;
-  right: 750px;
-  top: 230px;
+  left: 740px;
+  top: 280px;
 }
 
 i {
@@ -122,24 +122,24 @@ i {
 
 .fa-dog:before {
   position: absolute;
-  right: 761px;
-  top: 240px;
+  left: 752px;
+  top: 290px;
 }
 
 .fa-child:before {
   position: absolute;
   left: 333px;
-  top: 241px;
+  top: 290px;
 }
 .fa-heart:before {
   position: absolute;
-  right: 968px;
-  top: 242px;
+  left: 552px;
+  top: 292px;
 }
 .fa-money-bill-wave-alt:before {
   position: absolute;
   left: 120px;
-  top: 241px;
+  top: 291px;
 }
 
 .containerfilt {
@@ -190,17 +190,69 @@ i {
 
 .square {
   background-color: lightgrey;
+  height: 679px;
+  border-radius: 20px;
 }
 
 .titlesquare {
   margin-left: 20px;
 }
 
+.fa-chart-line:before {
+  color: black;
+  position: absolute;
+  right: 85px;
+  top: 500px;
+}
+
 #housemarseille {
-  min-width: 60%;
+  max-width: 62%;
 }
 
 #famoushouse {
   min-width: 30%;
   margin-right: 40px;
+}
+
+.wcontent,
+.wcontent2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.wcontent {
+  flex-flow: row wrap;
+}
+
+.wcontent2 {
+  flex-flow: column wrap;
+}
+
+.container,
+.container2 {
+  background-color: white;
+  border-radius: 20px;
+  margin: 10px 0 0 0;
+}
+
+.container {
+  width: 270px;
+  height: 200px;
+}
+
+.container2 {
+  height: 180px;
+  width: 400px;
+  margin-left: 20px;
+}
+
+#container4,
+#container5,
+#container6 {
+  margin-top: 50px;
+}
+
+h5 {
+  font-family: raleway bold;
+  margin-left: 15px;
 }
