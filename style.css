@@ -6,19 +6,20 @@
   font-family: raleway regular;
   src: url(font/static/Raleway-Regular.ttf);
 }
-
-.navigation {
+body {
+  margin-left: 2.5vw;
+}
+.Navigation {
   display: flex;
   justify-content: space-between;
 }
 
-.ireservia {
-  width: 100px;
-  height: 40px;
-  margin-left: 20px;
-  margin-top: 20px;
+.I-reservia {
+  width: 8vw;
+  height: 6vh;
+  margin-top: 2.5vh;
 }
-.listes1 {
+.Listes-1 {
   display: flex;
   flex-direction: row;
   list-style-type: none;
@@ -27,44 +28,42 @@
   font-family: raleway regular;
 }
 li {
-  margin-right: 50px;
+  margin-right: 3vw;
 }
-.activité {
+.Activité {
   color: black;
 }
-.signup {
+.Signup {
   font-family: Raleway bold;
 }
-.sect1 {
-  margin-left: 20px;
-}
+
 h3 {
   font-family: raleway bold;
 }
-.pnature {
+.P-nature {
   font-family: raleway regular;
 }
-.barsearch {
+.Bar-Search {
   display: flex;
   flex-direction: row;
 }
-.maps {
+.Maps {
   border-style: ridge;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   background-color: lightgrey;
   border-width: 1px;
   border-color: lightgrey;
-  height: 40px;
+  height: 5vh;
 }
-.search {
+.Search {
   font-family: Raleway bold;
   border-right: none;
   border-left: none;
   border-style: ridge;
   border-width: 1px;
 }
-.validate {
+.Validate {
   background-color: #0065fc;
   border: none;
   color: white;
@@ -72,80 +71,77 @@ h3 {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-.raccourci {
+.Raccourci {
   display: flex;
   flex-direction: row;
+  width: 100%;
+  height: 20%;
 }
 
-.filter {
-  margin-top: 70px;
-  margin-left: 55px;
-}
-.titlefilter {
+.Title-Filter {
   font-family: Raleway bold;
-  margin-top: 80px;
+  margin: 11vh 0 0 0;
 }
-.logo {
+
+.Filter {
+  margin: 10vh 0 0 3vw;
+}
+
+.Logo-1,
+.Logo-2,
+.Logo-3,
+.Logo-4 {
   border: none;
   background-color: #deebff;
   border-radius: 70px;
-  width: 36px;
-  height: 36px;
+  width: 2.75vw;
+  height: 5.75vh;
+  margin-left: 1vw;
+  position: absolute;
+  z-index: 2;
 }
 
-#logo1 {
-  position: absolute;
-  left: 110px;
-  top: 280px;
+.Logo-2 {
+  margin-left: 15vw;
 }
 
-#logo2 {
-  position: absolute;
-  left: 320px;
-  top: 280px;
+.Logo-3 {
+  margin-left: 29vw;
 }
 
-#logo3 {
-  position: absolute;
-  left: 540px;
-  top: 280px;
-}
-#logo4 {
-  position: absolute;
-  left: 740px;
-  top: 280px;
+.Logo-4 {
+  margin-left: 43vw;
 }
 
 i {
   color: #0065fc;
 }
 
+.fa-money-bill-wave-alt:before {
+  position: absolute;
+  z-index: 3;
+  margin-left: 1.7vw;
+}
+
 .fa-dog:before {
   position: absolute;
-  left: 752px;
-  top: 290px;
 }
 
 .fa-child:before {
   position: absolute;
-  left: 333px;
-  top: 290px;
 }
 .fa-heart:before {
   position: absolute;
-  left: 552px;
-  top: 292px;
-}
-.fa-money-bill-wave-alt:before {
-  position: absolute;
-  left: 120px;
-  top: 291px;
 }
 
-.containerfilt {
-  height: 30px;
-  width: 135px;
-  padding-left: 15px;
+.Container-Filt,
+.Container-Filt-2,
+.Container-Filt-3,
+.Container-Filt-4 {
+  height: 5vh;
+  width: 13vw;
+  margin-left: 2vw;
+  padding-left: 1vw;
   border-style: solid;
   border-left: none;
   border-width: 2px;
@@ -155,47 +151,121 @@ i {
   background-color: white;
   text-align: center;
   font-family: Raleway bold;
+  position: absolute;
+  z-index: 1;
+}
+
+.Container-Filt-2 {
+  margin-left: 16vw;
+}
+
+.Container-Filt-3 {
+  margin-left: 30vw;
+}
+
+.Container-Filt-4 {
+  margin-left: 44vw;
+  width: 13vw;
+  padding-left: 1vw;
+}
+
+.Container-Filt-Text {
+  margin: initial;
+  margin-top: 1vh;
 }
 
 .Warning {
   display: flex;
   flex-direction: row;
-  margin-top: 60px;
+  margin-top: 10vh;
 }
 
-.circle {
-  width: 30px;
-  height: 30px;
+.Circle {
+  width: 2.25vw;
+  height: 5vh;
   border-radius: 30px;
   background-color: #deebff;
-  margin-top: 10px;
 }
 .fa-info::before {
   position: absolute;
-  left: 40px;
-  margin-top: 16px;
 }
 
-.notif500 {
-  margin-left: 20px;
+.Notif-500 {
+  margin-left: 2vw;
   font-family: raleway regular;
 }
 
-.sect2 {
+.Sect-2 {
   display: flex;
   flex-direction: row;
-  margin: 30px 0 0 20px;
+  margin: 7vh 0 0 1vw;
   justify-content: space-between;
 }
 
-.square {
-  background-color: lightgrey;
-  height: 679px;
+.Square {
+  background-color: whitesmoke;
+  height: 100vh;
   border-radius: 20px;
 }
 
-.titlesquare {
-  margin-left: 20px;
+#House-Marseille {
+  width: 62vw;
+}
+
+.Title-Square {
+  margin-left: 2vw;
+}
+
+.W-Content,
+.W-Content2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.W-Content {
+  flex-flow: row wrap;
+}
+
+.Container,
+.Container-2 {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0.5vw 0.5vh 1vw #aaa;
+}
+
+.Container {
+  width: 28.25%;
+  height: 31vh;
+  margin-top: 4.5vh;
+  /* a revoir apre le margin top du container 2 */
+}
+
+.Chamber-Image {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 97%;
+  height: 50%;
+  padding-top: 2%;
+  padding-left: 1.5%;
+}
+
+h4 {
+  margin: 1% 0 0 7%;
+}
+.Night-Price {
+  margin: 4% 0 0 7%;
+  font-family: Raleway regular;
+}
+
+.More-Info {
+  font-family: Raleway bold;
+  margin-left: 2vw;
+  margin-top: 10vh;
+}
+
+#Famous-House {
+  width: 29vw;
+  margin-right: 2vw;
 }
 
 .fa-chart-line:before {
@@ -205,85 +275,39 @@ i {
   top: 500px;
 }
 
-#housemarseille {
-  max-width: 62%;
-}
-
-#famoushouse {
-  min-width: 30%;
-  margin-right: 40px;
-}
-
-.wcontent,
-.wcontent2 {
-  display: flex;
-  justify-content: space-around;
-}
-
-.wcontent {
-  flex-flow: row wrap;
-}
-
-.container,
-.container2 {
-  background-color: white;
-  border-radius: 20px;
-  margin: 15px 0 0 0;
-}
-#container4,
-#container5,
-#container6 {
-  margin-top: 50px;
-}
-
-.container {
-  width: 270px;
-  height: 210px;
-  margin: auto;
-}
-
-.chamberimage {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  margin: 3px 0 0 03px;
-  width: 263px;
-  height: 110px;
-}
-
-.container2 {
-  display: flex;
-  flex-direction: column;
-  height: 180px;
-  width: 400px;
-  margin-left: 20px;
-}
-
-.wcontent2 {
+.W-Content2 {
   flex-flow: column wrap;
 }
 
-.leftimage {
-  height: 100%;
-  background-image: url(/projet2/images/hebergements/4_small/chamber21.jpg);
+/* enlever le padding et trouver un moyen de faire un margin */
+
+.Container-2 {
+  display: flex;
+  flex-flow: column wrap;
+  height: 26vh;
+  width: 90%;
+  margin-left: 1.5vw;
+  margin-top: 2vh;
+}
+
+.Left-Image {
+  height: 95%;
+  width: 45%;
   background-repeat: no-repeat;
-  background-size: 170px 100%;
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
-  margin: 5px 0px 5px 5px;
+  margin: 1%;
 }
 
-#leftimage2 {
-  background-image: url(/projet2/images/hebergements/4_small/chamber22.jpg);
-}
-#leftimage3 {
-  background-image: url(/projet2/images/hebergements/4_small/chamber23.jpg);
+.Right-Title,
+.Right-Title-2,
+.Right-Title-3 {
+  margin: 2% 0 3% 0;
 }
 
-.righttitle,
-.righttitle2,
-.righttitle3 {
-  position: absolute;
-  right: 145px;
+.Night-Price-2 {
+  font-family: raleway regular;
+  margin: 2% 3% 0 0;
 }
 
 h4,
@@ -291,34 +315,102 @@ h5 {
   font-family: raleway bold;
 }
 
-h5 {
-  margin: 5px 0 0 20px;
+.Sect-3 {
+  margin-top: 10vh;
 }
 
-.nightprice {
-  margin-left: 20px;
-  font-family: Raleway regular;
+.City-Title {
+  margin-left: 1.5vw;
 }
 
-#nightprice2,
-#nightprice3,
-#nightprice4 {
-  position: absolute;
-  top: 630px;
-  right: 135px;
+.Global-Activity {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
 
-#nightprice3 {
-  top: 830px;
+.Big-Img {
+  background-color: whitesmoke;
+  border-radius: 20px;
+  height: 70vh;
+  width: 19.5vw;
+  box-shadow: 0.5vw 0.5vh 1vw #aaa;
+  margin-right: 2vw;
 }
 
-#nightprice2 {
-  top: 1030px;
+.Port-Img,
+.Port-Img-Small-1,
+.Port-Img-Small-2 {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+  height: 87%;
 }
 
-.moreinfo {
-  font-family: Raleway bold;
-  position: absolute;
-  left: 75px;
-  top: 1060px;
+.Title-Activity {
+  margin: 3vh 0 0 1vw;
+}
+
+.Image-Up-Down {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+
+.Small-Image-1,
+.Small-Image-2 {
+  background-color: whitesmoke;
+  border-radius: 20px;
+  width: 19.5vw;
+  box-shadow: 0.5vw 0.5vh 1vw #aaa;
+  margin-right: 2vw;
+}
+
+.Small-Image-1 {
+  height: 40vh;
+}
+
+.Small-Image-2 {
+  height: 28vh;
+}
+
+.Port-Img-Small-1 {
+  width: 100%;
+  height: 77%;
+}
+
+.Port-Img-Small-2 {
+  width: 100%;
+  height: 67%;
+}
+
+footer {
+  background-color: whitesmoke;
+  background-size: cover;
+}
+
+.End-List {
+  display: flex;
+  flex-flow: row wrap;
+  height: 30vh;
+  margin: 20vh 0 0 0;
+}
+
+.Footer-Block-1 {
+  margin-left: 4vw;
+}
+
+.Footer-Block-2,
+.Footer-Block-3 {
+  margin-left: 12vw;
+}
+
+footer h5 {
+  margin-left: 2.5vw;
+  margin-top: 7vh;
+}
+
+Footer li {
+  margin-top: 2vh;
+  list-style-type: none;
 }
