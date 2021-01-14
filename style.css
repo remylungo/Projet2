@@ -6,48 +6,57 @@
   font-family: raleway regular;
   src: url(font/static/Raleway-Regular.ttf);
 }
-body {
-  margin-left: 2.5vw;
-}
-.Navigation {
+
+.navigation {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 
-.I-reservia {
+.i-reservia {
   width: 8vw;
   height: 6vh;
-  margin-top: 2.5vh;
 }
-.Listes-1 {
+a {
+  text-decoration: none;
+}
+
+.listes-1 {
   display: flex;
   flex-direction: row;
   list-style-type: none;
-  margin-top: 34px;
+  margin-top: 3vh;
+  padding: 0;
   color: #0065fc;
   font-family: raleway regular;
 }
+
 li {
   margin-right: 3vw;
 }
-.Activité {
+
+.activité {
   color: black;
 }
-.Signup {
+.signup {
   font-family: Raleway bold;
+}
+
+.sect-1 {
+  margin-left: 1vw;
 }
 
 h3 {
   font-family: raleway bold;
 }
-.P-nature {
+.p-nature {
   font-family: raleway regular;
 }
-.Bar-Search {
+.bar-search {
   display: flex;
   flex-direction: row;
 }
-.Maps {
+.maps {
   border-style: ridge;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -56,14 +65,14 @@ h3 {
   border-color: lightgrey;
   height: 5vh;
 }
-.Search {
+.search {
   font-family: Raleway bold;
   border-right: none;
   border-left: none;
   border-style: ridge;
   border-width: 1px;
 }
-.Validate {
+.validate {
   background-color: #0065fc;
   border: none;
   color: white;
@@ -71,77 +80,72 @@ h3 {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-.Raccourci {
+
+.filter {
   display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 20%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  width: 85vw;
+  margin-top: 8vh;
+  padding: 0;
 }
 
-.Title-Filter {
+.filter li {
+  margin-top: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-right: auto;
+}
+
+.title-filter {
   font-family: Raleway bold;
-  margin: 11vh 0 0 0;
+  padding: 0 0 1vh 0;
 }
 
-.Filter {
-  margin: 10vh 0 0 3vw;
+li span {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.Logo-1,
-.Logo-2,
-.Logo-3,
-.Logo-4 {
-  border: none;
-  background-color: #deebff;
-  border-radius: 70px;
-  width: 2.75vw;
-  height: 5.75vh;
-  margin-left: 1vw;
+span i {
   position: absolute;
   z-index: 2;
+  margin-left: 0.7vw;
+  margin-top: 1.75vh;
 }
 
-.Logo-2 {
-  margin-left: 15vw;
+.fa-child:before {
+  margin-left: 0.25vw;
 }
 
-.Logo-3 {
-  margin-left: 29vw;
+.fa-heart:before {
+  margin-left: 0.15vw;
 }
 
-.Logo-4 {
-  margin-left: 43vw;
+.fa-dog:before {
+  margin-left: 0.15vw;
+}
+.circle-logo {
+  border: none;
+  background-color: #deebff;
+  border-radius: 20px;
+  width: 2.75vw;
+  height: 5.75vh;
+  position: absolute;
 }
 
 i {
   color: #0065fc;
 }
 
-.fa-money-bill-wave-alt:before {
-  position: absolute;
-  z-index: 3;
-  margin-left: 1.7vw;
-}
-
-.fa-dog:before {
-  position: absolute;
-}
-
-.fa-child:before {
-  position: absolute;
-}
-.fa-heart:before {
-  position: absolute;
-}
-
-.Container-Filt,
-.Container-Filt-2,
-.Container-Filt-3,
-.Container-Filt-4 {
+.container-filt,
+.container-filt-2,
+.container-filt-3,
+.container-filt-4 {
   height: 5vh;
-  width: 13vw;
-  margin-left: 2vw;
-  padding-left: 1vw;
+  min-width: 8vw;
+  max-width: 14vw;
   border-style: solid;
   border-left: none;
   border-width: 2px;
@@ -151,36 +155,36 @@ i {
   background-color: white;
   text-align: center;
   font-family: Raleway bold;
-  position: absolute;
-  z-index: 1;
+  margin-left: 1vw;
 }
 
-.Container-Filt-2 {
-  margin-left: 16vw;
+.container-filt {
+  width: 12vw;
 }
 
-.Container-Filt-3 {
-  margin-left: 30vw;
+.container-filt-2 {
+  width: 8vw;
 }
 
-.Container-Filt-4 {
-  margin-left: 44vw;
-  width: 13vw;
-  padding-left: 1vw;
+.container-filt-3 {
+  width: 11vw;
 }
 
-.Container-Filt-Text {
+.container-filt-4 {
+  width: 14vw;
+}
+.container-filt-text {
   margin: initial;
-  margin-top: 1vh;
+  padding: 1vh 0 0 1vw;
 }
 
-.Warning {
+.warning {
   display: flex;
   flex-direction: row;
   margin-top: 10vh;
 }
 
-.Circle {
+.circle {
   width: 2.25vw;
   height: 5vh;
   border-radius: 30px;
@@ -190,57 +194,57 @@ i {
   position: absolute;
 }
 
-.Notif-500 {
+.notif-500 {
   margin-left: 2vw;
   font-family: raleway regular;
 }
 
-.Sect-2 {
+.sect-2 {
   display: flex;
   flex-direction: row;
   margin: 7vh 0 0 1vw;
   justify-content: space-between;
 }
 
-.Square {
+.square {
   background-color: whitesmoke;
   height: 100vh;
   border-radius: 20px;
 }
 
-#House-Marseille {
+#house-marseille {
   width: 62vw;
 }
 
-.Title-Square {
+.title-square {
   margin-left: 2vw;
 }
 
-.W-Content,
-.W-Content2 {
+.w-content,
+.w-content2 {
   display: flex;
   justify-content: space-around;
 }
 
-.W-Content {
+.w-content {
   flex-flow: row wrap;
 }
 
-.Container,
-.Container-2 {
+.container,
+.container-2 {
   background-color: white;
   border-radius: 20px;
   box-shadow: 0.5vw 0.5vh 1vw #aaa;
 }
 
-.Container {
+.container {
   width: 28.25%;
   height: 31vh;
   margin-top: 4.5vh;
   /* a revoir apre le margin top du container 2 */
 }
 
-.Chamber-Image {
+.chamber-image {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   width: 97%;
@@ -252,18 +256,18 @@ i {
 h4 {
   margin: 1% 0 0 7%;
 }
-.Night-Price {
+.night-price {
   margin: 4% 0 0 7%;
   font-family: Raleway regular;
 }
 
-.More-Info {
+.more-info {
   font-family: Raleway bold;
   margin-left: 2vw;
   margin-top: 10vh;
 }
 
-#Famous-House {
+#famous-house {
   width: 29vw;
   margin-right: 2vw;
 }
@@ -275,13 +279,13 @@ h4 {
   top: 500px;
 }
 
-.W-Content2 {
+.w-content-2 {
   flex-flow: column wrap;
 }
 
 /* enlever le padding et trouver un moyen de faire un margin */
 
-.Container-2 {
+.container-2 {
   display: flex;
   flex-flow: column wrap;
   height: 26vh;
@@ -290,7 +294,7 @@ h4 {
   margin-top: 2vh;
 }
 
-.Left-Image {
+.left-image {
   height: 95%;
   width: 45%;
   background-repeat: no-repeat;
@@ -299,13 +303,13 @@ h4 {
   margin: 1%;
 }
 
-.Right-Title,
-.Right-Title-2,
-.Right-Title-3 {
+.right-title,
+.right-title-2,
+.right-title-3 {
   margin: 2% 0 3% 0;
 }
 
-.Night-Price-2 {
+.night-price-2 {
   font-family: raleway regular;
   margin: 2% 3% 0 0;
 }
@@ -315,21 +319,21 @@ h5 {
   font-family: raleway bold;
 }
 
-.Sect-3 {
+.sect-3 {
   margin-top: 10vh;
 }
 
-.City-Title {
+.city-title {
   margin-left: 1.5vw;
 }
 
-.Global-Activity {
+.global-activity {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
 }
 
-.Big-Img {
+.big-img {
   background-color: whitesmoke;
   border-radius: 20px;
   height: 70vh;
@@ -338,27 +342,31 @@ h5 {
   margin-right: 2vw;
 }
 
-.Port-Img,
-.Port-Img-Small-1,
-.Port-Img-Small-2 {
+.port-img,
+.port-img-small-1,
+.port-img-small-2 {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   width: 100%;
   height: 87%;
 }
 
-.Title-Activity {
-  margin: 3vh 0 0 1vw;
+.port-img-small-2 {
+  height: 70%;
 }
 
-.Image-Up-Down {
+.title-activity {
+  margin: 2vh 0 0 1vw;
+}
+
+.image-up-down {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
 }
 
-.Small-Image-1,
-.Small-Image-2 {
+.small-image-1,
+.small-image-2 {
   background-color: whitesmoke;
   border-radius: 20px;
   width: 19.5vw;
@@ -366,15 +374,15 @@ h5 {
   margin-right: 2vw;
 }
 
-.Small-Image-1 {
+.small-image-1 {
   height: 40vh;
 }
 
-.Small-Image-2 {
+.small-image-2 {
   height: 28vh;
 }
 
-.Port-Img-Small-1 {
+.port-img-small-1 {
   width: 100%;
   height: 77%;
 }
@@ -389,20 +397,17 @@ footer {
   background-size: cover;
 }
 
-.End-List {
+.end-list {
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-around;
   height: 30vh;
   margin: 20vh 0 0 0;
 }
 
-.Footer-Block-1 {
-  margin-left: 4vw;
-}
-
-.Footer-Block-2,
-.Footer-Block-3 {
-  margin-left: 12vw;
+.footer-block-2,
+.footer-block-3 {
+  margin-left: 10vw;
 }
 
 footer h5 {
@@ -410,7 +415,537 @@ footer h5 {
   margin-top: 7vh;
 }
 
-Footer li {
+footer li {
   margin-top: 2vh;
   list-style-type: none;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .navigation {
+    flex-flow: column wrap;
+  }
+
+  .i-reservia {
+    width: 21vw;
+    margin: auto;
+    margin-top: 3vh;
+  }
+
+  li {
+    margin-right: 15vw;
+  }
+
+  .listes-1 {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    padding: 0;
+    margin: 5vh 0 3vh 0;
+  }
+
+  .home {
+    margin-top: 6vh;
+    margin-left: 10vw;
+  }
+
+  .activité {
+    margin: auto;
+    margin-top: 6vh;
+    margin-right: 15vw;
+  }
+
+  .signup {
+    margin-left: 15vw;
+  }
+
+  .sect-1 {
+    margin-left: 3vw;
+  }
+
+  .validate {
+    margin-right: 2vw;
+  }
+
+  .filter {
+    flex-direction: column;
+    align-content: center;
+    margin: auto;
+    margin-top: 5vh;
+  }
+
+  .title-filter {
+    text-align: center;
+  }
+
+  li span {
+    margin-top: 2vh;
+  }
+
+  .fa-money-bill-wave-alt:before {
+    margin-left: 6px;
+  }
+
+  .fa-child:before {
+    margin-left: 10px;
+  }
+
+  .fa-heart:before {
+    margin-left: 8px;
+  }
+
+  .fa-dog:before {
+    margin-left: 8px;
+  }
+  .circle-logo {
+    width: 40px;
+  }
+
+  .container-filt,
+  .container-filt-2,
+  .container-filt-3,
+  .container-filt-4 {
+    max-width: max-content;
+    width: auto;
+    margin-left: 5vw;
+  }
+
+  .container-filt {
+    padding: 0 5vw 0 8vw;
+    margin-right: 0.5vw;
+  }
+
+  .container-filt-2 {
+    padding: 0 5vw 0 9vw;
+  }
+
+  .container-filt-3 {
+    padding: 0 5vw 0 8vw;
+  }
+
+  .container-filt-4 {
+    padding: 0 6vw 0 8vw;
+  }
+
+  /* sect sur les item image faire les filtres */
+
+  .sect-2 {
+    flex-flow: column-reverse wrap;
+    justify-content: space-around;
+  }
+
+  .square {
+    margin-top: 15vh;
+  }
+
+  #famous-house {
+    margin: 2vw;
+    width: auto;
+  }
+
+  #house-marseille {
+    margin-top: 15vh;
+    height: auto;
+    width: 100%;
+    background-color: white;
+  }
+
+  .container-2 {
+    align-content: end;
+    margin: auto;
+    margin-top: 3vh;
+    height: 25vh;
+  }
+
+  .container {
+    width: 100%;
+    margin: auto;
+    margin-top: 3vh;
+  }
+
+  .w-content {
+    flex-flow: column wrap;
+    margin: 2vw;
+  }
+
+  .chamber-image {
+    width: 100%;
+    padding: 0;
+  }
+
+  /* .w-content-2 {
+    height: auto;
+  } */
+
+  /* signup display none
+    et recréeer un autre avec un display que tu dois trouver
+    2 lien un que tu cache et un autre que tu affiches */
+
+  .city-title {
+    text-align: center;
+  }
+
+  .global-activity {
+    flex-flow: column wrap;
+    margin: 2vw;
+  }
+
+  .big-img,
+  .small-image-1,
+  .small-image-2 {
+    width: 100%;
+    margin: auto;
+    margin-top: 5vh;
+    height: 30vh;
+  }
+
+  .port-img,
+  .port-img-small-1,
+  .port-img-small-2 {
+    height: 67%;
+    width: 100%;
+  }
+
+  footer {
+    height: 100%;
+    flex-flow: nowrap column;
+  }
+  .footer-block-1,
+  .footer-block-2,
+  .footer-block-3 {
+    width: 100%;
+    background: whitesmoke;
+    margin: auto;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .navigation {
+    flex-flow: column wrap;
+  }
+
+  .i-reservia {
+    width: 18vw;
+    margin: auto;
+    margin-top: 5vh;
+  }
+  /* faut modifier la taille de la police */
+
+  li {
+    margin-right: 15vw;
+  }
+
+  .listes-1 {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    padding: 0;
+    margin: 5vh 0 3vh 0;
+  }
+
+  .home {
+    margin-top: 6vh;
+    margin-left: 10vw;
+  }
+
+  .activité {
+    margin: auto;
+    margin-top: 6vh;
+    margin-right: 15vw;
+  }
+
+  .signup {
+    margin-left: 15vw;
+  }
+
+  .sect-1 {
+    margin: 3vh 0 0 3vw;
+  }
+
+  .validate {
+    margin-right: 2vw;
+  }
+
+  .filter {
+    flex-direction: column;
+    align-content: center;
+    margin: auto;
+    margin-top: 5vh;
+  }
+
+  .title-filter {
+    text-align: center;
+  }
+
+  li span {
+    margin-top: 2vh;
+  }
+
+  span i {
+    margin-left: 10px;
+  }
+
+  .fa-child:before {
+    margin-left: 3px;
+  }
+
+  /* .fa-money-bill-wave-alt:before {
+    margin-left: 4px;
+  }
+
+  
+
+  .fa-heart:before {
+    margin-left: 6px;
+  }
+
+  .fa-dog:before {
+    margin-left: 6px;
+  } */
+  .circle-logo {
+    width: 40px;
+  }
+
+  .container-filt,
+  .container-filt-2,
+  .container-filt-3,
+  .container-filt-4 {
+    max-width: max-content;
+    width: auto;
+    margin-left: 3vw;
+  }
+
+  .container-filt {
+    padding: 0 25px 0 30px;
+    margin-right: 0.5vw;
+  }
+
+  .container-filt-2 {
+    padding: 0 25px 0 30px;
+  }
+
+  .container-filt-3 {
+    padding: 0 25px 0 30px;
+  }
+
+  .container-filt-4 {
+    padding: 0 25px 0 30px;
+  }
+
+  /* sect sur les item image faire les filtres */
+
+  .sect-2 {
+    flex-flow: column-reverse wrap;
+    justify-content: space-around;
+  }
+
+  .square {
+    margin-top: 15vh;
+  }
+
+  .title-square {
+    text-align: center;
+  }
+
+  #famous-house {
+    margin: 2vw;
+    width: auto;
+  }
+
+  #house-marseille {
+    margin-top: 15vh;
+    height: auto;
+    width: 100%;
+    background-color: white;
+  }
+
+  .container-2 {
+    align-content: end;
+    margin: auto;
+    margin-top: 3vh;
+    height: 25vh;
+  }
+
+  .container {
+    width: 80%;
+    height: 40vh;
+    margin: auto;
+    margin-top: 5vh;
+  }
+
+  .w-content {
+    flex-flow: column wrap;
+    margin: 2vw;
+  }
+
+  .chamber-image {
+    width: 100%;
+    padding: 0;
+  }
+
+  .W-Content-2 {
+    height: auto;
+  }
+
+  /* signup display none
+    et recréeer un autre avec un display que tu dois trouver
+    2 lien un que tu cache et un autre que tu affiches */
+
+  .city-title {
+    text-align: center;
+  }
+
+  .global-activity {
+    flex-flow: column wrap;
+    margin: 2vw;
+  }
+
+  .big-img,
+  .small-image-1,
+  .small-image-2 {
+    width: 80%;
+    margin: auto;
+    margin-top: 5vh;
+    height: 40vh;
+  }
+
+  .port-img,
+  .port-img-small-1,
+  .port-img-small-2 {
+    height: 67%;
+    width: 100%;
+  }
+
+  footer {
+    height: 100%;
+    flex-flow: nowrap column;
+  }
+  .footer-block-1,
+  .footer-block-2,
+  .footer-block-3 {
+    width: 100%;
+    background: whitesmoke;
+    margin: auto;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 960px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .navigation {
+    flex-flow: column wrap;
+  }
+
+  .i-reservia {
+    width: 18vw;
+    margin: auto;
+    margin-top: 3vh;
+    height: 10vh;
+  }
+
+  .listes-1 {
+    justify-content: space-around;
+    margin-top: 10vh;
+  }
+
+  .circle-logo {
+    width: 38px;
+  }
+
+  .container-filt,
+  .container-filt-2,
+  .container-filt-3,
+  .container-filt-4 {
+    max-width: max-content;
+    width: auto;
+    margin-left: 2vw;
+    padding: 0 20px 0 30px;
+  }
+
+  .filter {
+    justify-content: space-between;
+    justify-content: space-between;
+    margin: auto;
+  }
+
+  li span {
+    margin-top: 10vh;
+    margin-left: 5vw;
+  }
+
+  span i {
+    margin-left: 9px;
+  }
+
+  .sect-2 {
+    flex-flow: column-reverse wrap;
+  }
+
+  .square {
+    margin: auto;
+    margin-top: 8vh;
+  }
+
+  #famous-house,
+  #house-marseille {
+    width: 95%;
+    margin: auto;
+    margin-top: 5vh;
+  }
+
+  .container-2 {
+    margin: auto;
+    margin-top: 2vh;
+    width: 70%;
+  }
+
+  .right-title {
+    margin-right: 20vw;
+  }
+
+  .city-title {
+    text-align: center;
+  }
+
+  .big-img,
+  .small-image-1,
+  .small-image-2 {
+    width: 40vw;
+    margin-top: 5vh;
+  }
+
+  .big-img {
+    height: auto;
+  }
+
+  .end-list {
+    justify-content: space-around;
+  }
+
+  footer h5 {
+    margin: 5vh 0 0 5vw;
+  }
+
+  .footer-block-1,
+  .footer-block-2,
+  .footer-block-3 {
+    margin: 0;
+    padding: 0 5vw 0 0;
+  }
+
+  .footer-list-1,
+  .footer-list-2,
+  .footer-list-3 {
+    padding-left: 5vw;
+  }
 }

@@ -4,179 +4,301 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
     <title>Projet OC 1</title>
   </head>
   <body>
     <header>
       <nav>
-        <div class="Navigation">
+        <div class="navigation">
           <img
-            class="I-reservia"
+            class="i-reservia"
             src="projet2/images/logo/reservia.png"
             alt="le nom reservia présenté en bleu"
           />
-
-          <ul class="Listes-1">
-            <li>hébergement</li>
-            <li class="Activité">Activités</li>
-            <li class="Signup">S'inscrire</li>
+          <ul class="listes-1">
+            <li class="home"><a href="">hébergement</a></li>
+            <li class="activité"><a href="">Activités</a></li>
+            <li class="signup"><a href="">S'inscrire</a></li>
           </ul>
         </div>
       </nav>
     </header>
     <main>
-      <section class="Sect-1">
-        <h3>
-          Trouvez votre hébergement pour des vacances de rêve
-        </h3>
-        <p class="P-nature">En plein centre ville ou en pleine nature</p>
+      <section class="sect-1">
+        <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
+        <p class="p-nature">En plein centre ville ou en pleine nature</p>
         <div>
-          <form class="Bar-Search">
-            <button class="Maps" type="text">logo maps</button>
-            <input type="text" placeholder="Marseille/France" class="Search" />
-            <input type="submit" class="Validate" value="rechercher"></input>
+          <form class="bar-search">
+            <button class="maps">logo maps</button>
+            <input
+              type="search"
+              placeholder="Marseille/France"
+              class="Search"
+            />
+            <input type="submit" class="validate" value="rechercher" />
           </form>
         </div>
-        <div class="Raccourci">
-          <h4 class="Title-Filter">Filtre</h4>
-          <div class="Filter">
-            <div class="Logo-1"></div>
-            <div class="Container-Filt"> <p class="Container-Filt-Text">Economique</p> </div>
-            <i class="fas fa-money-bill-wave-alt"></i>
-          </div>
-           <div class="Filter">
-            <div class="Logo-2"></div>
-            <div class="Container-Filt-2"> <p class="Container-Filt-Text">Familial</p> </div>
+        <div class="raccourci">
+          <ul class="filter">
+            
+            <li><h4 class="title-filter">Filtre</h4></li>
+
+            <li>
+              <span> 
+                <i class="fas fa-money-bill-wave-alt"></i> 
+                <div class="circle-logo"></div>
+                <div class="container-filt"> <p class="container-filt-text">Economique</p></div>
+              </span>
+             
+            </li>
+
+            <li>
+              <span> 
+                <i class="fas fa-child"></i> 
+                <div class="circle-logo"></div>
+                <div class="container-filt-2"> <p class="container-filt-text">Familial</p></div>
+              </span>
+              
+            </li>
+
+            <li>
+              <span> 
+                <i class="fas fa-heart"></i> 
+                <div class="circle-logo"></div>
+                <div class="container-filt-3"> <p class="container-filt-text">Romantique</p></div>
+              </span>
+              
+            </li>
+
+            <li>
+              <span> 
+                <i class="fas fa-dog"></i> 
+                <div class="circle-logo"></div>
+                <div class="container-filt-4"> <p class="container-filt-text">Animaux autorisés</p></div>
+              </span>
+              
+            </li>
+          </ul>
+
+          <!-- <div class="filter">
+            <div class="logo-2"></div>
+            <div class="container-filt-2">
+              <p class="container-filt-text">Familial</p>
+            </div>
             <i class="fas fa-child"></i>
           </div>
-           <div class="Filter">
-            <div class="Logo-3"></div>
-            <div class="Container-Filt-3"> <p class="Container-Filt-Text">Romantique</p> </div>
+          <div class="filter">
+            <div class="logo-3"></div>
+            <div class="container-filt-3">
+              <p class="container-filt-text">Romantique</p>
+            </div>
           </div>
-           <div class="Filter">
-            <div class="Logo-4"></div>
-            <div class="Container-Filt-4"> <p class="Container-Filt-Text">Animaux autorisés</p> </div>
+          <div class="filter">
+            <div class="logo-4"></div>
+            <div class="container-filt-4">
+              <p class="container-filt-text">Animaux autorisés</p>
+            </div>
             <i class="fas fa-dog"></i>
           </div>
         </div>
-        <div class="Warning">
-            <div class="Circle"></div>
-            <i class="fas fa-info"></i>
-            <p class="Notif-500">Plus de 500 logements sont disponible dans cette ville</p>
-          </div>
+        <div class="warning">
+          <div class="circle"></div>
+          <i class="fas fa-info"></i>
+          <p class="notif-500">
+            Plus de 500 logements sont disponible dans cette ville
+          </p>
+        </div> -->
       </section>
-      <section class="Sect-2 ">
-          <div class="Square" id="House-Marseille">
-            <h3 class="Title-Square">Hébergements à marseille</h3>
-            <div class="W-Content">
-              <div class="Container">
-                <img class="Chamber-Image" src="/projet2/images/hebergements/4_small/chamber1.jpg" alt="chambre à un lit a coté d'une fenêtre">
-                <h4>Auberge de la cannebière</h4>
-                <p class="Night-Price">Nuit à partir de <strong>25€</strong></p>
-              </div>
-              <div class="Container">
-                <img class="Chamber-Image" src="/projet2/images/hebergements/4_small/chamber2.jpg" alt="">
-                <h4>Hôtel du Port</h4>
-                <p class="Night-Price">Nuit à partir de <strong>52€</strong></p>
-              </div>
-              <div class="Container">
-                <img class="Chamber-Image" src="/projet2/images/hebergements/4_small/chamber3.jpg" alt="">
-                <h4>Hôtel les mouettes</h4>
-                <p class="Night-Price">Nuit à partir de <strong>76€</strong></p>
-              </div>
-              <div class="Container">
-                <img class="Chamber-Image" src="/projet2/images/hebergements/4_small/chamber4.jpg" alt="">
-                <h4>hôtel de la mer</h4>
-                <p class="Night-Price">Nuit à partir de <strong>46€</strong></p>
-              </div>
-              <div class="Container">
-                <img class="Chamber-Image" src="/projet2/images/hebergements/4_small/chamber5.jpg" alt="">
-                <h4>Auberge Le Panier</h4>
-                <p class="Night-Price">Nuit à partir de <strong>23€</strong></p>
-              </div>
-              <div class="Container">
-                <img class="Chamber-Image" src="/projet2/images/hebergements/4_small/chamber6.jpg" alt="">
-                <h4>Hôtel chez Amina</h4>
-                <p class="Night-Price">Nuit à partir de <strong>96€</strong></p>
-              </div>
+      <section class="sect-2">
+        <div class="square" id="house-marseille">
+          <h3 class="title-square">Hébergements à marseille</h3>
+          <div class="w-content">
+            <div class="container">
+              <img
+                class="chamber-image"
+                src="/projet2/images/hebergements/4_small/chamber1.jpg"
+                alt="chambre à un lit a coté d'une fenêtre"
+              />
+              <h4>Auberge de la cannebière</h4>
+              <p class="night-price">Nuit à partir de <strong>25€</strong></p>
             </div>
-            <div class="More-Info"><p><strong>Afficher plus</strong></p></div>
-          </div>
-          <div class="Square" id="Famous-House">
-            <h3 class="Title-Square">Les plus populaires</h3>
-            <i class="fas fa-chart-line"></i>
-            <div class="W-Content2">
-              <div class="Container-2">
-                <img class="Left-Image" src="/projet2/images/hebergements/4_small/chamber21.jpg" alt="">
-                <h4 class="Right-Title">Hôtel Le soleil du <br> matin</h4>
-                <p class="Night-Price-2">Nuit à partir de <strong>23€</strong></p>
-              </div>
-              <div class="Container-2">
-                <img class="Left-Image" src="/projet2/images/hebergements/4_small/chamber22.jpg" alt="">
-                <h4 class="Right-Title">Au coeur de l'eau <br> Chambres d'hôtes</h4>
-                <p class="Night-Price-2">Nuit à partir de <strong>71€</strong></p>
-              </div>
-              <div class="Container-2">
-                <img class="Left-Image" src="/projet2/images/hebergements/4_small/chamber23.jpg" alt="">
-                <h4 class="Right-Title">Hôtel Tout bleu et <br> matin</h4>
-                <p class="Night-Price-2">Nuit à partir de <strong>68€</strong></p>
-              </div>
+            <div class="container">
+              <img
+                class="chamber-image"
+                src="/projet2/images/hebergements/4_small/chamber2.jpg"
+                alt=""
+              />
+              <h4>Hôtel du Port</h4>
+              <p class="night-price">Nuit à partir de <strong>52€</strong></p>
+            </div>
+            <div class="container">
+              <img
+                class="chamber-image"
+                src="/projet2/images/hebergements/4_small/chamber3.jpg"
+                alt=""
+              />
+              <h4>Hôtel les mouettes</h4>
+              <p class="night-price">Nuit à partir de <strong>76€</strong></p>
+            </div>
+            <div class="container">
+              <img
+                class="chamber-image"
+                src="/projet2/images/hebergements/4_small/chamber4.jpg"
+                alt=""
+              />
+              <h4>hôtel de la mer</h4>
+              <p class="night-price">Nuit à partir de <strong>46€</strong></p>
+            </div>
+            <div class="container">
+              <img
+                class="chamber-image"
+                src="/projet2/images/hebergements/4_small/chamber5.jpg"
+                alt=""
+              />
+              <h4>Auberge Le Panier</h4>
+              <p class="night-price">Nuit à partir de <strong>23€</strong></p>
+            </div>
+            <div class="container">
+              <img
+                class="chamber-image"
+                src="/projet2/images/hebergements/4_small/chamber6.jpg"
+                alt=""
+              />
+              <h4>Hôtel chez Amina</h4>
+              <p class="night-price">Nuit à partir de <strong>96€</strong></p>
             </div>
           </div>
+          <div class="more-info">
+            <p><strong>Afficher plus</strong></p>
+          </div>
+        </div>
+        <div class="square" id="famous-house">
+          <h3 class="title-square">Les plus populaires</h3>
+          <i class="fas fa-chart-line"></i>
+          <div class="w-content-2">
+            <div class="container-2">
+              <img
+                class="left-image"
+                src="/projet2/images/hebergements/4_small/chamber21.jpg"
+                alt=""
+              />
+              <h4 class="right-title">
+                Hôtel Le soleil du <br />
+                matin
+              </h4>
+              <p class="night-price-2">Nuit à partir de <strong>23€</strong></p>
+            </div>
+            <div class="container-2">
+              <img
+                class="left-image"
+                src="/projet2/images/hebergements/4_small/chamber22.jpg"
+                alt=""
+              />
+              <h4 class="right-title">
+                Au coeur de l'eau <br />
+                Chambres d'hôtes
+              </h4>
+              <p class="night-price-2">Nuit à partir de <strong>71€</strong></p>
+            </div>
+            <div class="container-2">
+              <img
+                class="left-image"
+                src="/projet2/images/hebergements/4_small/chamber23.jpg"
+                alt=""
+              />
+              <h4 class="right-title">
+                Hôtel Tout bleu et <br />
+                matin
+              </h4>
+              <p class="night-price-2">Nuit à partir de <strong>68€</strong></p>
+            </div>
+          </div>
+        </div>
       </section>
-      <section class="Sect-3">
-        <h3 class="City-Title">Activités à Marseille</h3>
-        <div class="Global-Activity">
-          <div class="Big-Img">
-            <img class="Port-Img" src="/projet2/images/activites/4_small/img1.jpg" alt="">
-            <h4 class="Title-Activity">Vieux port</h4>
+      <section class="sect-3">
+        <h3 class="city-title">Activités à Marseille</h3>
+        <div class="global-activity">
+          <div class="big-img">
+            <img
+              class="port-img"
+              src="/projet2/images/activites/4_small/img1.jpg"
+              alt=""
+            />
+            <h4 class="title-activity">Vieux port</h4>
           </div>
-          <div class="Image-Up-Down">
-            <div class="Small-Image-1"> <img class="Port-Img-Small-1" src="/projet2/images/activites/4_small/img2.jpg" alt="">
-            <h4 class="Title-Activity">Fort de Pomègues</h4>
+          <div class="image-up-down">
+            <div class="small-image-1">
+              <img
+                class="port-img-small-1"
+                src="/projet2/images/activites/4_small/img2.jpg"
+                alt=""
+              />
+              <h4 class="title-activity">Fort de Pomègues</h4>
             </div>
-            <div class="Small-Image-2"> <img class="Port-Img-Small-2" src="/projet2/images/activites/4_small/img3.jpg" alt="">
-              <h4 class="Title-Activity">îles du Frioul</h4>
+            <div class="small-image-2">
+              <img
+                class="port-img-small-2"
+                src="/projet2/images/activites/4_small/img3.jpg"
+                alt=""
+              />
+              <h4 class="title-activity">îles du Frioul</h4>
             </div>
           </div>
-          <div class="Big-Img">
-            <img class="Port-Img" src="/projet2/images/activites/4_small/img4.jpg" alt="">
-            <h4 class="Title-Activity">Parc national des Calanques</h4>
+          <div class="big-img">
+            <img
+              class="port-img"
+              src="/projet2/images/activites/4_small/img4.jpg"
+              alt=""
+            />
+            <h4 class="title-activity">Parc national des Calanques</h4>
           </div>
-          <div class="Image-Up-Down">
-            <div class="Small-Image-1"> 
-              <img class="Port-Img-Small-1" src="/projet2/images/activites/4_small/img5.jpg" alt=""> 
-              <h4 class="Title-Activity">Notre-Dame-de-la-Garde</h4>
+          <div class="image-up-down">
+            <div class="small-image-1">
+              <img
+                class="port-img-small-1"
+                src="/projet2/images/activites/4_small/img5.jpg"
+                alt=""
+              />
+              <h4 class="title-activity">Notre-Dame-de-la-Garde</h4>
             </div>
-            <div class="Small-Image-2"> 
-              <img class="Port-Img-Small-2" src="/projet2/images/activites/4_small/img6.jpg" alt="">
-              <h4 class="Title-Activity">Parc Longchamp</h4>
+            <div class="small-image-2">
+              <img
+                class="port-img-small-2"
+                src="/projet2/images/activites/4_small/img6.jpg"
+                alt=""
+              />
+              <h4 class="title-activity">Parc Longchamp</h4>
             </div>
           </div>
         </div>
       </section>
     </main>
     <footer>
-      <div class="End-List">
-        <div class="Footer-Block-1">
+      <div class="end-list">
+        <div class="footer-block-1">
           <h5>A propos</h5>
-          <ul class="Footer-List-1">
+          <ul class="footer-list-1">
             <li>Fonctionnement du site</li>
             <li>Conditions générales de ventes</li>
             <li>Données et confidentialité</li>
           </ul>
         </div>
-        <div class="Footer-Block-2">
+        <div class="footer-block-2">
           <h5>Nos hébergements</h5>
-          <ul class="Footer-List-2">
+          <ul class="footer-list-2">
             <li>Charte qualité</li>
             <li>Soumettre votre hôtel</li>
           </ul>
         </div>
-        <div class="Footer-Block-3">
+        <div class="footer-block-3">
           <h5>Assistance</h5>
-          <ul class="Footer-List-3">
+          <ul class="footer-list-3">
             <li>Centre d'aide</li>
             <li>Nous-contacter</li>
           </ul>
