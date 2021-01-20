@@ -7,38 +7,44 @@
   src: url(font/static/Raleway-Regular.ttf);
 }
 
+body {
+  margin: 5px;
+}
+
 .navigation {
   display: flex;
-  flex-direction: row;
+  align-items: flex-end;
   justify-content: space-between;
 }
 
 .i-reservia {
   width: 8vw;
   height: 6vh;
+  margin-left: 1vw;
 }
 a {
   text-decoration: none;
+  color: #0065fc;
 }
 
-.listes-1 {
+.signup-mobile {
+  display: none;
+}
+
+nav ul {
   display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  margin-top: 3vh;
-  padding: 0;
-  color: #0065fc;
+  list-style: none;
   font-family: raleway regular;
 }
 
-li {
-  margin-right: 3vw;
+nav ul li {
+  padding-right: 3.5vw;
 }
 
-.activité {
+.activity {
   color: black;
 }
-.signup {
+.signup-desktop {
   font-family: Raleway bold;
 }
 
@@ -60,17 +66,21 @@ h3 {
   border-style: ridge;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  background-color: lightgrey;
-  border-width: 1px;
-  border-color: lightgrey;
+  background-color: whitesmoke;
+  border: none;
   height: 5vh;
+  width: 40px;
+}
+
+.bar-search input {
+  border-left-style: none;
+  border-right-style: none;
+  border-color: whitesmoke;
+  border-top-color: whitesmoke;
+  border-top-style: solid;
 }
 .search {
   font-family: Raleway bold;
-  border-right: none;
-  border-left: none;
-  border-style: ridge;
-  border-width: 1px;
 }
 .validate {
   background-color: #0065fc;
@@ -81,101 +91,72 @@ h3 {
   border-bottom-right-radius: 10px;
 }
 
+.raccourci {
+  display: flex;
+  align-items: center;
+  padding-bottom: 2rem;
+  width: 85%;
+  position: relative;
+}
+
 .filter {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  font-size: 1.1rem;
+  font-weight: 700;
   list-style: none;
-  width: 85vw;
-  margin-top: 8vh;
-  padding: 0;
+  justify-content: space-between;
+  width: 85%;
 }
 
 .filter li {
-  margin-top: auto;
+  border: 3px solid rgb(219, 216, 216);
+  border-radius: 30px;
+  border: 3px solid #f2f2f2;
+  border-left: none;
+  padding: 0 2rem 0 0;
+  transition: all 0.5s ease;
+  width: auto;
+  position: relative;
+}
+
+li a {
   display: flex;
-  flex-wrap: nowrap;
-  margin-right: auto;
 }
 
-.title-filter {
-  font-family: Raleway bold;
-  padding: 0 0 1vh 0;
-}
-
-li span {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-span i {
+a i {
   position: absolute;
-  z-index: 2;
-  margin-left: 0.7vw;
-  margin-top: 1.75vh;
 }
 
-.fa-child:before {
-  margin-left: 0.25vw;
+.fa-money-bill-wave {
+  margin: 12px 0 0 9px;
 }
 
-.fa-heart:before {
-  margin-left: 0.15vw;
+.fa-child {
+  margin: 12px 0 0 13px;
 }
 
-.fa-dog:before {
-  margin-left: 0.15vw;
+.fa-heart {
+  margin: 14px 0 0 11px;
 }
+
+.fa-dog {
+  margin: 12px 0 0 11px;
+}
+
 .circle-logo {
   border: none;
   background-color: #deebff;
   border-radius: 20px;
-  width: 2.75vw;
-  height: 5.75vh;
-  position: absolute;
+  height: 42px;
+  width: 41px;
+  float: left;
 }
 
-i {
-  color: #0065fc;
-}
-
-.container-filt,
-.container-filt-2,
-.container-filt-3,
-.container-filt-4 {
-  height: 5vh;
-  min-width: 8vw;
-  max-width: 14vw;
-  border-style: solid;
-  border-left: none;
-  border-width: 2px;
-  border-color: lightgrey;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
-  background-color: white;
-  text-align: center;
-  font-family: Raleway bold;
-  margin-left: 1vw;
-}
-
-.container-filt {
-  width: 12vw;
-}
-
-.container-filt-2 {
-  width: 8vw;
-}
-
-.container-filt-3 {
-  width: 11vw;
-}
-
-.container-filt-4 {
-  width: 14vw;
-}
-.container-filt-text {
-  margin: initial;
-  padding: 1vh 0 0 1vw;
+a p {
+  margin: 10px 0 0 15px;
+  color: initial;
+  font-family: raleway bold;
 }
 
 .warning {
@@ -184,18 +165,21 @@ i {
   margin-top: 10vh;
 }
 
-.circle {
-  width: 2.25vw;
-  height: 5vh;
+.circle-warning {
+  width: 30px;
+  height: 30px;
   border-radius: 30px;
-  background-color: #deebff;
+  background-color: white;
+  border: 3px solid #f2f2f2;
 }
-.fa-info::before {
+.fa-info {
   position: absolute;
+  color: #0065fc;
+  margin: 9px 0 0 14px;
 }
 
 .notif-500 {
-  margin-left: 2vw;
+  margin: 1vh 0 0 2vw;
   font-family: raleway regular;
 }
 
@@ -261,6 +245,33 @@ h4 {
   font-family: Raleway regular;
 }
 
+.container ul {
+  display: flex;
+  list-style: none;
+  padding: 0 0 0 17px;
+}
+
+.container ul li {
+  color: #0065fc;
+}
+.container ul li.grey-star {
+  color: #aaa;
+}
+
+.container-2 ul {
+  display: flex;
+  list-style: none;
+  padding: 45px 0 0 0;
+}
+
+.container-2 ul li {
+  color: #0065fc;
+}
+
+.container-2 ul li.grey-star {
+  color: #aaa;
+}
+
 .more-info {
   font-family: Raleway bold;
   margin-left: 2vw;
@@ -272,11 +283,19 @@ h4 {
   margin-right: 2vw;
 }
 
+.famous-tilte-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.famous-tilte-logo h3 {
+  margin-left: 0;
+  padding-right: 6vw;
+}
+
 .fa-chart-line:before {
   color: black;
-  position: absolute;
-  right: 85px;
-  top: 500px;
 }
 
 .w-content-2 {
@@ -427,107 +446,123 @@ footer li {
   }
 
   .navigation {
-    flex-flow: column wrap;
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    align-items: flex-start;
   }
 
   .i-reservia {
-    width: 21vw;
+    width: auto;
+    height: 6vh;
+    margin-left: 2vw;
+  }
+
+  .signup-mobile {
+    display: flex;
+    font-family: raleway bold;
+    padding: 2vh 7vw 5vh 0;
+  }
+
+  nav {
     margin: auto;
-    margin-top: 3vh;
   }
 
-  li {
-    margin-right: 15vw;
-  }
-
-  .listes-1 {
-    flex-wrap: wrap-reverse;
-    justify-content: center;
+  nav ul {
     padding: 0;
-    margin: 5vh 0 3vh 0;
   }
 
-  .home {
-    margin-top: 6vh;
-    margin-left: 10vw;
+  nav ul li {
+    padding-left: 13vw;
   }
 
-  .activité {
-    margin: auto;
-    margin-top: 6vh;
-    margin-right: 15vw;
-  }
-
-  .signup {
-    margin-left: 15vw;
+  .signup-desktop {
+    display: none;
   }
 
   .sect-1 {
-    margin-left: 3vw;
+    margin-left: 15px;
   }
 
   .validate {
     margin-right: 2vw;
   }
 
-  .filter {
-    flex-direction: column;
-    align-content: center;
-    margin: auto;
-    margin-top: 5vh;
-  }
-
-  .title-filter {
-    text-align: center;
-  }
-
-  li span {
-    margin-top: 2vh;
-  }
-
-  .fa-money-bill-wave-alt:before {
-    margin-left: 6px;
-  }
-
-  .fa-child:before {
-    margin-left: 10px;
-  }
-
-  .fa-heart:before {
-    margin-left: 8px;
-  }
-
-  .fa-dog:before {
-    margin-left: 8px;
-  }
-  .circle-logo {
-    width: 40px;
-  }
-
-  .container-filt,
-  .container-filt-2,
-  .container-filt-3,
-  .container-filt-4 {
-    max-width: max-content;
+  .raccourci {
+    flex-wrap: wrap;
     width: auto;
-    margin-left: 5vw;
+    margin-top: 8vh;
+    padding-bottom: 1rem;
   }
 
-  .container-filt {
-    padding: 0 5vw 0 8vw;
-    margin-right: 0.5vw;
+  .raccourci h3 {
+    margin: 0;
   }
 
-  .container-filt-2 {
-    padding: 0 5vw 0 9vw;
+  .filter {
+    padding-left: 0;
+    margin-top: 0;
+    width: 96%;
   }
 
-  .container-filt-3 {
-    padding: 0 5vw 0 8vw;
+  .filter li {
+    padding: 0 1rem 0 0;
+    margin: 2vh 0 0 0;
+    height: 38px;
   }
 
-  .container-filt-4 {
-    padding: 0 6vw 0 8vw;
+  span i {
+    color: blue;
+  }
+  .fa-money-bill-wave {
+    margin: 10px 0 0 9px;
+  }
+
+  .fa-child {
+    margin: 10px 0 0 13px;
+  }
+
+  .fa-heart {
+    margin: 11px 0 0 11px;
+  }
+
+  .fa-dog {
+    margin: 10px 0 0 11px;
+  }
+
+  .circle-logo {
+    height: 39px;
+  }
+
+  a p {
+    margin: 10px 0 0 15px;
+    color: initial;
+    font-family: initial;
+    font-family: raleway bold;
+    font-size: 14px;
+  }
+
+  .warning {
+    width: 100%;
+    font-size: smaller;
+    align-items: center;
+  }
+
+  .warning span {
+    align-self: flex-start;
+  }
+
+  .circle-warning {
+    max-width: 27px;
+    max-height: 23px;
+  }
+
+  .fa-info {
+    margin: 12px 0 0 11px;
+  }
+
+  .notif-500 {
+    margin-left: 4vw;
   }
 
   /* sect sur les item image faire les filtres */
@@ -560,10 +595,28 @@ footer li {
     height: 25vh;
   }
 
-  .container {
-    width: 100%;
-    margin: auto;
-    margin-top: 3vh;
+  .title-square {
+    margin: 30px 0 0 5vw;
+  }
+
+  .famous-tilte-logo {
+    margin-top: 5vh;
+  }
+
+  .famous-tilte-logo h3 {
+    margin-top: 0;
+  }
+
+  .night-price-2,
+  .right-title {
+    font-size: smaller;
+    margin: 15px 0 0 15px;
+  }
+
+  .container-2 ul {
+    padding: 0;
+    margin: 13% 0 0 15px;
+    width: 15px;
   }
 
   .w-content {
@@ -571,21 +624,31 @@ footer li {
     margin: 2vw;
   }
 
+  .container {
+    width: 100%;
+    margin: auto;
+    margin-top: 3vh;
+  }
+
   .chamber-image {
     width: 100%;
     padding: 0;
   }
 
-  /* .w-content-2 {
-    height: auto;
+  .container h4 {
+    margin: 5px 0 0 15px;
+  }
+
+  .night-price {
+    margin: 10px 0 0 15px;
+  }
+
+  /* .city-title{
+    text-align: center;
   } */
 
-  /* signup display none
-    et recréeer un autre avec un display que tu dois trouver
-    2 lien un que tu cache et un autre que tu affiches */
-
-  .city-title {
-    text-align: center;
+  .container ul {
+    padding-left: 15px;
   }
 
   .global-activity {
@@ -629,114 +692,96 @@ footer li {
   }
 
   .navigation {
-    flex-flow: column wrap;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
   }
 
   .i-reservia {
-    width: 18vw;
-    margin: auto;
-    margin-top: 5vh;
-  }
-  /* faut modifier la taille de la police */
-
-  li {
-    margin-right: 15vw;
+    width: 15vw;
+    height: 10vh;
   }
 
-  .listes-1 {
-    flex-wrap: wrap-reverse;
-    justify-content: center;
+  .signup-mobile {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    align-self: center;
+    width: 100%;
+  }
+
+  nav ul {
     padding: 0;
-    margin: 5vh 0 3vh 0;
+    width: 100%;
+    justify-content: space-evenly;
   }
 
-  .home {
-    margin-top: 6vh;
-    margin-left: 10vw;
-  }
-
-  .activité {
-    margin: auto;
-    margin-top: 6vh;
-    margin-right: 15vw;
-  }
-
-  .signup {
-    margin-left: 15vw;
+  .signup-desktop {
+    display: flex;
   }
 
   .sect-1 {
-    margin: 3vh 0 0 3vw;
+    margin-left: 3vw;
   }
 
   .validate {
     margin-right: 2vw;
   }
 
+  .raccourci {
+    flex-wrap: wrap;
+    width: auto;
+    margin-top: 8vh;
+  }
+
+  .raccourci h3 {
+    margin: 0;
+  }
+
   .filter {
-    flex-direction: column;
-    align-content: center;
-    margin: auto;
-    margin-top: 5vh;
+    padding-left: 0;
+    margin-top: 0;
+    width: 96%;
   }
 
-  .title-filter {
-    text-align: center;
-  }
-
-  li span {
-    margin-top: 2vh;
+  .filter li {
+    padding: 0 1rem 0 0;
+    margin: 2vh 0 0 0;
+    height: 38px;
   }
 
   span i {
-    margin-left: 10px;
+    color: blue;
+  }
+  .fa-money-bill-wave {
+    margin: 10px 0 0 9px;
   }
 
-  .fa-child:before {
-    margin-left: 3px;
+  .fa-child {
+    margin: 10px 0 0 13px;
   }
 
-  /* .fa-money-bill-wave-alt:before {
-    margin-left: 4px;
+  .fa-heart {
+    margin: 11px 0 0 11px;
   }
 
-  
-
-  .fa-heart:before {
-    margin-left: 6px;
+  .fa-dog {
+    margin: 10px 0 0 11px;
   }
 
-  .fa-dog:before {
-    margin-left: 6px;
-  } */
   .circle-logo {
-    width: 40px;
+    height: 39px;
   }
 
-  .container-filt,
-  .container-filt-2,
-  .container-filt-3,
-  .container-filt-4 {
-    max-width: max-content;
-    width: auto;
-    margin-left: 3vw;
-  }
-
-  .container-filt {
-    padding: 0 25px 0 30px;
-    margin-right: 0.5vw;
-  }
-
-  .container-filt-2 {
-    padding: 0 25px 0 30px;
-  }
-
-  .container-filt-3 {
-    padding: 0 25px 0 30px;
-  }
-
-  .container-filt-4 {
-    padding: 0 25px 0 30px;
+  a p {
+    margin: 10px 0 0 15px;
+    color: initial;
+    font-family: initial;
+    font-family: raleway bold;
+    font-size: 14px;
   }
 
   /* sect sur les item image faire les filtres */
@@ -752,11 +797,27 @@ footer li {
 
   .title-square {
     text-align: center;
+    margin-left: 0;
   }
 
   #famous-house {
     margin: 2vw;
     width: auto;
+  }
+
+  .famous-tilte-logo {
+    margin-top: 4vh;
+    align-items: baseline;
+  }
+
+  .famous-tilte-logo h3 {
+    margin-top: 0;
+    padding-right: 20vw;
+    font-size: larger;
+  }
+
+  .fa-chart-line:before {
+    font-size: larger;
   }
 
   #house-marseille {
@@ -780,9 +841,18 @@ footer li {
     margin-top: 5vh;
   }
 
+  .container ul {
+    padding: 0;
+    margin-left: 7%;
+  }
+
   .w-content {
     flex-flow: column wrap;
     margin: 2vw;
+  }
+
+  .W-Content-2 {
+    height: auto;
   }
 
   .chamber-image {
@@ -790,13 +860,17 @@ footer li {
     padding: 0;
   }
 
-  .W-Content-2 {
-    height: auto;
+  .right-title {
+    margin: 15px 0 0 15px;
   }
 
-  /* signup display none
-    et recréeer un autre avec un display que tu dois trouver
-    2 lien un que tu cache et un autre que tu affiches */
+  .night-price-2 {
+    margin: 12px 0 0 15px;
+  }
+
+  .container-2 ul {
+    margin: 0 0 0 15px;
+  }
 
   .city-title {
     text-align: center;
@@ -843,48 +917,88 @@ footer li {
   }
 
   .navigation {
-    flex-flow: column wrap;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
   }
 
   .i-reservia {
-    width: 18vw;
-    margin: auto;
-    margin-top: 3vh;
+    width: 15vw;
     height: 10vh;
   }
 
-  .listes-1 {
-    justify-content: space-around;
-    margin-top: 10vh;
+  .signup-mobile {
+    display: none;
   }
 
-  .circle-logo {
-    width: 38px;
+  nav {
+    display: flex;
+    align-self: center;
+    width: 100%;
   }
 
-  .container-filt,
-  .container-filt-2,
-  .container-filt-3,
-  .container-filt-4 {
-    max-width: max-content;
+  nav ul {
+    padding: 0;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .signup-desktop {
+    display: flex;
+  }
+
+  .raccourci {
+    flex-wrap: wrap;
     width: auto;
-    margin-left: 2vw;
-    padding: 0 20px 0 30px;
+    margin-top: 8vh;
+  }
+
+  .raccourci h3 {
+    margin: 0;
   }
 
   .filter {
-    justify-content: space-between;
-    justify-content: space-between;
-    margin: auto;
+    padding-left: 0;
+    margin-top: 0;
+    width: 96%;
   }
 
-  li span {
-    margin-top: 10vh;
-    margin-left: 5vw;
+  .filter li {
+    padding: 0 1rem 0 0;
+    margin: 2vh 0 0 0;
+    height: 38px;
   }
 
   span i {
-    margin-left: 9px;
+    color: blue;
+  }
+  .fa-money-bill-wave {
+    margin: 10px 0 0 9px;
+  }
+
+  .fa-child {
+    margin: 10px 0 0 13px;
+  }
+
+  .fa-heart {
+    margin: 11px 0 0 11px;
+  }
+
+  .fa-dog {
+    margin: 10px 0 0 11px;
+  }
+
+  .circle-logo {
+    height: 39px;
+  }
+
+  a p {
+    margin: 10px 0 0 15px;
+    color: initial;
+    font-family: initial;
+    font-family: raleway bold;
+    font-size: 14px;
   }
 
   .sect-2 {
@@ -903,6 +1017,26 @@ footer li {
     margin-top: 5vh;
   }
 
+  .famous-tilte-logo {
+    margin-top: 4vh;
+    align-items: baseline;
+  }
+
+  .famous-tilte-logo h3 {
+    margin-top: 0;
+    padding-right: 25vw;
+    font-size: larger;
+  }
+
+  .fa-chart-line:before {
+    font-size: larger;
+  }
+
+  .container h4,
+  .night-price {
+    font-size: smaller;
+  }
+
   .container-2 {
     margin: auto;
     margin-top: 2vh;
@@ -910,12 +1044,17 @@ footer li {
   }
 
   .right-title {
-    margin-right: 20vw;
+    margin-right: 15vw;
   }
 
-  .city-title {
-    text-align: center;
+  .container-2 ul {
+    padding: 0;
+    margin: 30px 0 0 0;
   }
+
+  /* .city-title {
+    text-align: center;
+  } */
 
   .big-img,
   .small-image-1,

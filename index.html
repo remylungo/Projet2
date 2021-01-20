@@ -13,29 +13,33 @@
     <title>Projet OC 1</title>
   </head>
   <body>
-    <header>
+    <header class="navigation">
+      <a>
+        <img
+          class="i-reservia"
+          src="projet2/images/logo/reservia.png"
+          alt="le nom reservia présenté en bleu"
+        />
+      </a>
+      <a class="signup-mobile" href="#">S'inscrire</a>
       <nav>
-        <div class="navigation">
-          <img
-            class="i-reservia"
-            src="projet2/images/logo/reservia.png"
-            alt="le nom reservia présenté en bleu"
-          />
-          <ul class="listes-1">
-            <li class="home"><a href="">hébergement</a></li>
-            <li class="activité"><a href="">Activités</a></li>
-            <li class="signup"><a href="">S'inscrire</a></li>
-          </ul>
-        </div>
+        <ul>
+          <li><a class="home" href="#rooms">Hébergements</a></li>
+          <li><a class="activity" href="#activity">Activités</a></li>
+          <li>
+            <a class="signup-desktop" href="#">S'inscrire</a>
+          </li>
+        </ul>
       </nav>
     </header>
+
     <main>
       <section class="sect-1">
         <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
         <p class="p-nature">En plein centre ville ou en pleine nature</p>
         <div>
           <form class="bar-search">
-            <button class="maps">logo maps</button>
+            <button class="maps"><i class="fas fa-map-marker-alt"></i></button>
             <input
               type="search"
               placeholder="Marseille/France"
@@ -45,75 +49,45 @@
           </form>
         </div>
         <div class="raccourci">
+          <h3>Filtres</h3>
           <ul class="filter">
-            
-            <li><h4 class="title-filter">Filtre</h4></li>
-
-            <li>
-              <span> 
-                <i class="fas fa-money-bill-wave-alt"></i> 
+            <li class="filter-one">
+              <a href="#"
+                ><span><i class="fas fa-money-bill-wave blue"></i></span>
                 <div class="circle-logo"></div>
-                <div class="container-filt"> <p class="container-filt-text">Economique</p></div>
-              </span>
-             
+                <p>Economique</p>
+              </a>
             </li>
-
-            <li>
-              <span> 
-                <i class="fas fa-child"></i> 
+            <li class="filter-2">
+              <a href="#"
+                ><span><i class="fas fa-child blue"></i></span>
                 <div class="circle-logo"></div>
-                <div class="container-filt-2"> <p class="container-filt-text">Familial</p></div>
-              </span>
-              
+                <p>Familial</p>
+              </a>
             </li>
-
-            <li>
-              <span> 
-                <i class="fas fa-heart"></i> 
+            <li class="filter-3">
+              <a href="#"
+                ><span><i class="fas fa-heart blue"></i></span>
                 <div class="circle-logo"></div>
-                <div class="container-filt-3"> <p class="container-filt-text">Romantique</p></div>
-              </span>
-              
+                <p>Romantique</p>
+              </a>
             </li>
-
-            <li>
-              <span> 
-                <i class="fas fa-dog"></i> 
+            <li class="filter-4">
+              <a href="#"
+                ><span><i class="fas fa-dog blue"></i></span>
                 <div class="circle-logo"></div>
-                <div class="container-filt-4"> <p class="container-filt-text">Animaux autorisés</p></div>
-              </span>
-              
+                <p>Animaux autorisés</p>
+              </a>
             </li>
           </ul>
-
-          <!-- <div class="filter">
-            <div class="logo-2"></div>
-            <div class="container-filt-2">
-              <p class="container-filt-text">Familial</p>
-            </div>
-            <i class="fas fa-child"></i>
-          </div>
-          <div class="filter">
-            <div class="logo-3"></div>
-            <div class="container-filt-3">
-              <p class="container-filt-text">Romantique</p>
-            </div>
-          </div>
-          <div class="filter">
-            <div class="logo-4"></div>
-            <div class="container-filt-4">
-              <p class="container-filt-text">Animaux autorisés</p>
-            </div>
-            <i class="fas fa-dog"></i>
-          </div>
         </div>
         <div class="warning">
-          <div class="circle"></div>
-          <i class="fas fa-info"></i>
+          <span><i class="fas fa-info blue"></i></span>
+          <div class="circle-warning"></div>
           <p class="notif-500">
-            Plus de 500 logements sont disponible dans cette ville
+            Plus de 500 logements sont disponibles dans cette ville
           </p>
-        </div> -->
+        </div>
       </section>
       <section class="sect-2">
         <div class="square" id="house-marseille">
@@ -127,6 +101,13 @@
               />
               <h4>Auberge de la cannebière</h4>
               <p class="night-price">Nuit à partir de <strong>25€</strong></p>
+              <ul>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+              </ul>
             </div>
             <div class="container">
               <img
@@ -136,6 +117,13 @@
               />
               <h4>Hôtel du Port</h4>
               <p class="night-price">Nuit à partir de <strong>52€</strong></p>
+              <ul>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li class="grey-star"><i class="fas fa-star"></i></li>
+              </ul>
             </div>
             <div class="container">
               <img
@@ -145,6 +133,13 @@
               />
               <h4>Hôtel les mouettes</h4>
               <p class="night-price">Nuit à partir de <strong>76€</strong></p>
+              <ul>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li class="grey-star"><i class="fas fa-star"></i></li>
+              </ul>
             </div>
             <div class="container">
               <img
@@ -154,6 +149,13 @@
               />
               <h4>hôtel de la mer</h4>
               <p class="night-price">Nuit à partir de <strong>46€</strong></p>
+              <ul>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li class="grey-star"><i class="fas fa-star"></i></li>
+                <li class="grey-star"><i class="fas fa-star"></i></li>
+              </ul>
             </div>
             <div class="container">
               <img
@@ -163,6 +165,13 @@
               />
               <h4>Auberge Le Panier</h4>
               <p class="night-price">Nuit à partir de <strong>23€</strong></p>
+              <ul>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li class="grey-star"><i class="fas fa-star"></i></li>
+              </ul>
             </div>
             <div class="container">
               <img
@@ -172,6 +181,13 @@
               />
               <h4>Hôtel chez Amina</h4>
               <p class="night-price">Nuit à partir de <strong>96€</strong></p>
+              <ul>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+              </ul>
             </div>
           </div>
           <div class="more-info">
@@ -179,8 +195,10 @@
           </div>
         </div>
         <div class="square" id="famous-house">
-          <h3 class="title-square">Les plus populaires</h3>
-          <i class="fas fa-chart-line"></i>
+          <div class="famous-tilte-logo">
+            <h3 class="title-square">Les plus populaires</h3>
+            <i class="fas fa-chart-line"></i>
+          </div>
           <div class="w-content-2">
             <div class="container-2">
               <img
@@ -193,6 +211,13 @@
                 matin
               </h4>
               <p class="night-price-2">Nuit à partir de <strong>23€</strong></p>
+              <ul>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+              </ul>
             </div>
             <div class="container-2">
               <img
@@ -205,6 +230,13 @@
                 Chambres d'hôtes
               </h4>
               <p class="night-price-2">Nuit à partir de <strong>71€</strong></p>
+              <ul>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li class="grey-star"><i class="fas fa-star"></i></li>
+              </ul>
             </div>
             <div class="container-2">
               <img
@@ -217,6 +249,13 @@
                 matin
               </h4>
               <p class="night-price-2">Nuit à partir de <strong>68€</strong></p>
+              <ul>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+              </ul>
             </div>
           </div>
         </div>
