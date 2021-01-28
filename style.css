@@ -289,20 +289,6 @@ h4 {
   color: #aaa;
 }
 
-.container-2 ul {
-  display: flex;
-  list-style: none;
-  padding: 45px 0 0 0;
-}
-
-.container-2 ul li {
-  color: #0065fc;
-}
-
-.container-2 ul li.grey-star {
-  color: #aaa;
-}
-
 .more-info {
   font-family: Raleway bold;
   margin-left: 2vw;
@@ -342,13 +328,31 @@ h4 {
   margin-top: 2vh;
 }
 
+.container-2 picture {
+  height: 100%;
+  max-width: 40%;
+}
+
+.container-2 ul {
+  display: flex;
+  list-style: none;
+  padding: 45px 0 0 0;
+}
+
+.container-2 ul li {
+  color: #0065fc;
+}
+
+.container-2 ul li.grey-star {
+  color: #aaa;
+}
+
 .left-image {
   height: 95%;
-  width: 45%;
-  background-repeat: no-repeat;
+  width: 100%;
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
-  margin: 1%;
+  padding: 5px;
 }
 
 .right-title,
