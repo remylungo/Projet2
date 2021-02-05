@@ -1,19 +1,16 @@
-
-
 @font-face {
-  font-family: raleway bold;
+  font-family: raleway-bold;
   src: url(font/static/Raleway-Bold.ttf);
 }
 @font-face {
-  font-family: raleway regular;
+  font-family: raleway-regular;
   src: url(font/static/Raleway-Regular.ttf);
 }
 
 body {
   margin: 5px;
-  font-family: raleway regular;
+  font-family: raleway-regular;
 }
-
 .navigation {
   display: flex;
   align-items: flex-end;
@@ -63,7 +60,7 @@ nav a:hover {
   color: black;
 }
 .signup-desktop {
-  font-family: Raleway bold;
+  font-family: Raleway-bold;
 }
 
 .sect-1 {
@@ -71,7 +68,7 @@ nav a:hover {
 }
 
 h3 {
-  font-family: raleway bold;
+  font-family: raleway-bold;
 }
 
 .bar-search {
@@ -95,7 +92,7 @@ h3 {
   border-top-style: solid;
 }
 .search {
-  font-family: Raleway bold;
+  font-family: Raleway-bold;
   padding-left: 15px;
 }
 
@@ -108,7 +105,7 @@ h3 {
   background-color: #0065fc;
   border: none;
   color: white;
-  font-family: Raleway bold;
+  font-family: Raleway-bold;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   padding: 0 10px 0 10px;
@@ -188,7 +185,7 @@ a i {
 a p {
   margin: 10px 0 0 15px;
   color: initial;
-  font-family: raleway bold;
+  font-family: raleway-bold;
 }
 
 .warning {
@@ -288,7 +285,7 @@ h4 {
 }
 
 .more-info {
-  font-family: Raleway bold;
+  font-family: Raleway-bold;
   margin-left: 2vw;
   margin-top: 10vh;
 }
@@ -365,7 +362,7 @@ h4 {
 
 h4,
 h5 {
-  font-family: raleway bold;
+  font-family: raleway-bold;
 }
 
 .sect-3 {
@@ -507,7 +504,7 @@ footer li {
 
   .signup-mobile {
     display: flex;
-    font-family: raleway bold;
+    font-family: raleway-bold;
     padding: 2vh 7vw 5vh 0;
   }
 
@@ -557,7 +554,7 @@ footer li {
 
   .search {
     width: 65%;
-    font-family: raleway bold;
+    font-family: raleway-bold;
     font-size: 1em;
     padding-left: 15px;
   }
@@ -627,7 +624,7 @@ footer li {
     margin: 10px 0 0 15px;
     color: initial;
     font-family: initial;
-    font-family: raleway bold;
+    font-family: raleway-bold;
     font-size: 14px;
   }
 
@@ -851,7 +848,7 @@ footer li {
 
   .search {
     width: max-content;
-    font-family: raleway bold;
+    font-family: raleway-bold;
     font-size: 1em;
     padding-left: 15px;
   }
@@ -920,7 +917,7 @@ footer li {
     margin: 10px 0 0 15px;
     color: initial;
     font-family: initial;
-    font-family: raleway bold;
+    font-family: raleway-bold;
     font-size: 14px;
   }
 
@@ -1149,7 +1146,7 @@ footer li {
     margin: 10px 0 0 15px;
     color: initial;
     font-family: initial;
-    font-family: raleway bold;
+    font-family: raleway-bold;
     font-size: 14px;
   }
 
@@ -1236,5 +1233,4 @@ footer li {
     background: whitesmoke;
     padding-left: 20px;
   }
->>>>>>> body
 }
