@@ -9,6 +9,7 @@
 
 body {
   margin: 5px;
+  font-family: raleway regular;
 }
 
 .navigation {
@@ -39,7 +40,6 @@ nav {
 nav ul {
   display: flex;
   list-style: none;
-  font-family: raleway regular;
   height: 100%;
   margin-top: 0;
 }
@@ -71,9 +71,7 @@ nav a:hover {
 h3 {
   font-family: raleway bold;
 }
-.p-nature {
-  font-family: raleway regular;
-}
+
 .bar-search {
   display: flex;
   flex-direction: row;
@@ -212,7 +210,6 @@ a p {
 
 .notif-500 {
   margin: 1vh 0 0 2vw;
-  font-family: raleway regular;
 }
 
 .sect-2 {
@@ -273,7 +270,6 @@ h4 {
 }
 .night-price {
   margin: 4% 0 0 7%;
-  font-family: Raleway regular;
 }
 
 .container ul {
@@ -362,7 +358,6 @@ h4 {
 }
 
 .night-price-2 {
-  font-family: raleway regular;
   margin: 2% 3% 0 0;
 }
 
@@ -381,7 +376,7 @@ h5 {
 
 .global-activity {
   display: flex;
-  flex-flow: row wrap;
+
   justify-content: space-around;
 }
 
@@ -477,10 +472,12 @@ footer {
 
 footer h5 {
   margin-top: 7vh;
+  font-size: 1em;
 }
 footer ul {
   padding: 0;
   margin-right: 15vw;
+  font-size: smaller;
 }
 
 footer li {
@@ -1207,6 +1204,10 @@ footer li {
 
   .city-title {
     text-align: center;
+  }
+
+  .global-activity {
+    flex-wrap: wrap;
   }
 
   .big-img,
