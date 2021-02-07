@@ -52,15 +52,17 @@ nav ul li a {
   padding-top: 5vh;
 }
 
-nav a:hover {
+nav a {
   border-top: 3px solid #0065fc;
 }
 
 .activity {
   color: black;
+  border-color: white;
 }
 .signup-desktop {
   font-family: Raleway-bold;
+  border-color: white;
 }
 
 .sect-1 {
