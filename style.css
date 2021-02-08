@@ -525,7 +525,7 @@ footer li {
   }
 
   nav ul li a:hover {
-    border-top: 0px;
+    border-top: none;
     border-bottom: 3px solid #0065fc;
   }
 
