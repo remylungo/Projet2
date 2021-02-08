@@ -522,6 +522,7 @@ footer li {
   }
   nav ul li a {
     padding-bottom: 1vh;
+    border-top: none;
   }
 
   nav ul li a:hover {
