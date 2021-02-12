@@ -21,7 +21,7 @@
           alt="le nom reservia présenté en bleu"
         />
       </a>
-      <a class="signup-mobile" href="#">S'inscrire</a>
+
       <nav>
         <ul>
           <li><a class="home" href="#rooms">Hébergements</a></li>
@@ -46,9 +46,11 @@
               placeholder="Marseille/France"
               class="search"
             />
-            <input type="submit" class="validate" value="rechercher" />
-            <button type="submit" class="validate-mobile">
+
+            <button class="validate">
               <i class="fas fa-search"></i>
+
+              <span><input type="submit" value="Rechercher" /></span>
             </button>
           </form>
         </div>
@@ -94,10 +96,10 @@
         </div>
       </section>
       <section class="sect-2" id="rooms">
-        <div class="square" id="house-marseille">
-          <h3 class="title-square">Hébergements à marseille</h3>
+        <h3 class="title-square">Hébergements à marseille</h3>
+        <section class="square" id="house-marseille">
           <div class="w-content">
-            <div class="container">
+            <article class="container">
               <picture>
                 <source
                   media="(max-width: 959px)"
@@ -127,8 +129,8 @@
                 <li><i class="fas fa-star"></i></li>
                 <li><i class="fas fa-star"></i></li>
               </ul>
-            </div>
-            <div class="container">
+            </article>
+            <article class="container">
               <picture>
                 <source
                   media="(min-width: 320px)"
@@ -158,8 +160,8 @@
                 <li><i class="fas fa-star"></i></li>
                 <li class="grey-star"><i class="fas fa-star"></i></li>
               </ul>
-            </div>
-            <div class="container">
+            </article>
+            <article class="container">
               <picture>
                 <source
                   media="(min-width: 320px)"
@@ -188,8 +190,8 @@
                 <li><i class="fas fa-star"></i></li>
                 <li class="grey-star"><i class="fas fa-star"></i></li>
               </ul>
-            </div>
-            <div class="container">
+            </article>
+            <article class="container">
               <picture>
                 <source
                   media="(min-width: 320px)"
@@ -218,8 +220,8 @@
                 <li class="grey-star"><i class="fas fa-star"></i></li>
                 <li class="grey-star"><i class="fas fa-star"></i></li>
               </ul>
-            </div>
-            <div class="container">
+            </article>
+            <article class="container">
               <picture>
                 <source
                   media="(min-width: 320px)"
@@ -248,8 +250,8 @@
                 <li><i class="fas fa-star"></i></li>
                 <li class="grey-star"><i class="fas fa-star"></i></li>
               </ul>
-            </div>
-            <div class="container">
+            </article>
+            <article class="container">
               <picture>
                 <source
                   media="(min-width: 320px)"
@@ -278,19 +280,20 @@
                 <li><i class="fas fa-star"></i></li>
                 <li><i class="fas fa-star"></i></li>
               </ul>
-            </div>
+            </article>
           </div>
           <div class="more-info">
             <p><strong>Afficher plus</strong></p>
           </div>
-        </div>
-        <div class="square" id="famous-house">
+        </section>
+
+        <aside class="square" id="famous-house">
           <div class="famous-tilte-logo">
             <h3 class="title-square">Les plus populaires</h3>
             <i class="fas fa-chart-line"></i>
           </div>
           <div class="w-content-2">
-            <div class="container-2">
+            <article class="container-2">
               <picture>
                 <source
                   media="(min-width: 320px)"
@@ -323,8 +326,8 @@
                 <li><i class="fas fa-star"></i></li>
                 <li><i class="fas fa-star"></i></li>
               </ul>
-            </div>
-            <div class="container-2">
+            </article>
+            <article class="container-2">
               <picture>
                 <source
                   media="(min-width: 320px)"
@@ -356,8 +359,8 @@
                 <li><i class="fas fa-star"></i></li>
                 <li class="grey-star"><i class="fas fa-star"></i></li>
               </ul>
-            </div>
-            <div class="container-2">
+            </article>
+            <article class="container-2">
               <picture>
                 <source
                   media="(min-width: 320px)"
@@ -389,15 +392,15 @@
                 <li><i class="fas fa-star"></i></li>
                 <li><i class="fas fa-star"></i></li>
               </ul>
-            </div>
+            </article>
           </div>
-        </div>
+        </aside>
       </section>
 
       <section class="sect-3" id="activity">
         <h3 class="city-title">Activités à Marseille</h3>
         <div class="global-activity">
-          <div class="big-img">
+          <article class="big-img">
             <picture>
               <source
                 media="(min-width: 320px)"
@@ -418,9 +421,9 @@
               />
             </picture>
             <h4 class="title-activity">Vieux port</h4>
-          </div>
+          </article>
           <div class="image-up-down">
-            <div class="small-image-1">
+            <article class="small-image-1">
               <picture>
                 <source
                   media="(min-width: 320px)"
@@ -441,8 +444,8 @@
                 />
               </picture>
               <h4 class="title-activity">Fort de Pomègues</h4>
-            </div>
-            <div class="small-image-2">
+            </article>
+            <article class="small-image-2">
               <picture>
                 <source
                   media="(min-width: 320px)"
@@ -463,9 +466,9 @@
                 />
               </picture>
               <h4 class="title-activity">îles du Frioul</h4>
-            </div>
+            </article>
           </div>
-          <div class="big-img">
+          <article class="big-img">
             <picture>
               <source
                 media="(min-width: 320px)"
@@ -486,9 +489,9 @@
               />
             </picture>
             <h4 class="title-activity">Parc national des Calanques</h4>
-          </div>
+          </article>
           <div class="image-up-down">
-            <div class="small-image-3">
+            <article class="small-image-3">
               <picture>
                 <source
                   media="(min-width: 320px)"
@@ -509,8 +512,8 @@
                 />
               </picture>
               <h4 class="title-activity">Notre-Dame-de-la-Garde</h4>
-            </div>
-            <div class="small-image-4">
+            </article>
+            <article class="small-image-4">
               <picture>
                 <source
                   media="(min-width: 320px)"
@@ -531,11 +534,10 @@
                 />
               </picture>
               <h4 class="title-activity">Parc Longchamp</h4>
-            </div>
+            </article>
           </div>
         </div>
       </section>
-      <section class="sect-4"><p>bonjour à tous</p></section>
     </main>
 
     <footer>
@@ -565,4 +567,12 @@
       </div>
     </footer>
   </body>
+  <!-- 
+  attention utiliser des article sur les hebergements marseille les plus populaire 
+
+
+
+ 
+
+- -->
 </html>
