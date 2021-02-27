@@ -8,8 +8,12 @@
 }
 
 body {
-  margin: 5px;
+  margin: 0px;
   font-family: raleway-regular;
+}
+
+section {
+  padding: 0 2vw;
 }
 img {
   object-fit: cover;
@@ -25,7 +29,7 @@ img {
 .i-reservia {
   width: 8vw;
   height: 6vh;
-  margin-left: 1vw;
+  margin-left: 2vw;
   margin-bottom: 2vh;
 }
 a {
@@ -69,9 +73,9 @@ nav a:hover {
   font-family: Raleway-bold;
 }
 
-.sect-1 {
+/* .sect-1 {
   margin-left: 1vw;
-}
+} */
 
 h3 {
   font-family: raleway-bold;
@@ -120,7 +124,7 @@ h3 {
 .validate i {
   display: none;
 }
-.validate span input {
+.validate span {
   color: white;
   background-color: #0065fc;
   border: none;
@@ -226,7 +230,7 @@ a p {
 .sect-2 {
   display: flex;
   flex-direction: row;
-  margin: 7vh 0 0 1vw;
+  margin-top: 7vh;
   justify-content: space-between;
 }
 
@@ -356,7 +360,7 @@ h4 {
 
 .left-image {
   height: 95%;
-  width: 100%;
+  width: 45%;
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
   padding: 5px;
@@ -382,13 +386,13 @@ h5 {
 }
 
 .city-title {
-  margin-left: 1.5vw;
+  text-align: left;
 }
 
 .global-activity {
   display: flex;
 
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .big-img {
@@ -506,6 +510,10 @@ footer li {
     object-fit: cover;
   }
 
+  section {
+    padding: 0 1vw;
+  }
+
   .navigation {
     display: flex;
     flex-wrap: wrap;
@@ -596,7 +604,7 @@ footer li {
     display: block;
   }
 
-  .validate span input {
+  .validate span {
     display: none;
   }
 
