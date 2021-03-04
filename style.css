@@ -521,7 +521,7 @@ footer li {
   .i-reservia {
     width: auto;
     height: 6vh;
-    margin-left: 2vw;
+    margin-left: 19px;
   }
 
   .signup-mobile {
@@ -538,11 +538,21 @@ footer li {
     padding: 0;
     flex-wrap: wrap-reverse;
     justify-content: space-evenly;
+    border-bottom: 3px solid whitesmoke;
   }
 
   nav ul li {
-    padding: 0 10vw 0 8vw;
+    padding: 0 12vw 0 10vw;
+    margin-bottom: -3px;
   }
+  nav ul li:hover {
+    border-bottom: 3px solid #0065fc;
+  }
+
+  .signup_mobile_border:hover {
+    border: none;
+  }
+
   nav ul li a {
     padding: 0;
     padding-bottom: 1vh;
@@ -551,7 +561,6 @@ footer li {
 
   nav ul li a:hover {
     border-top: none;
-    border-bottom: 3px solid #0065fc;
   }
 
   .signup-desktop {
